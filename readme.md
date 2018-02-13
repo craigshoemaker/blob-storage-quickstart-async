@@ -27,7 +27,7 @@ Now, update add your blob storage connection string to a file named `.env`.
 
 ## Running the sample
 
-Once the setup steps are complete, you can interact with the sample by padding a command into the `--command` parameter.
+Once the setup steps are complete, you can interact with the sample by passing a command into the `--command` parameter.
 
 For instance if you want to upload the text file to Azure run the following command:
 

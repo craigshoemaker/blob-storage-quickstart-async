@@ -15,7 +15,7 @@ To run this sample you need an [Azure account](https://azure.microsoft.com/free/
 ## Set up
 First, clone the repository on your machine:
 
-    git clone 
+    git clone https://github.com/craigshoemaker/blob-storage-quickstart-rewrite.git
 
 Next, install the dependencies:
 

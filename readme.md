@@ -19,6 +19,10 @@ First, clone the repository on your machine:
 
     git clone https://github.com/craigshoemaker/blob-storage-quickstart-rewrite.git
 
+Then, switch to the appropriate folder:
+
+    cd blob-storage-quickstart-rewrite
+
 Next, install the dependencies:
 
     npm install

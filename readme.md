@@ -49,3 +49,7 @@ Commands available include:
 |`download`        | Downloads the contents of the `example` blob to `example.txt` |
 |`delete`          | Deletes the `example` blob |
 |`list`            | Lists the contents of the `test` container to the console |
+
+## Resources
+
+You can use the Azure [Storage explorer](https://azure.microsoft.com/features/storage-explorer/) to see the data in Azure.

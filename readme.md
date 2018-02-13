@@ -52,4 +52,4 @@ Commands available include:
 
 ## Resources
 
-You can use the Azure [Storage explorer](https://azure.microsoft.com/features/storage-explorer/) to see the data in Azure.
+You can use the [Azure Storage explorer](https://azure.microsoft.com/features/storage-explorer/) to see the data in Azure.

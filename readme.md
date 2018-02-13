@@ -8,7 +8,7 @@ The following sample is a rewrite of the Azure [Storage Blobs Quickstart](https:
 
 - **Uses async/await**: The [Azure Storage SDK API](https://github.com/Azure/azure-storage-node) is still callback-based, but the approach in this sample modernizes the syntax. API calls are wrapped in `Promises` and executed in the context of an `async/await` operation.
  
-- **Uses environment variables**: Rather than hard-coding the blob storage connection string, this sample accesses the connection string from environment variables. The use of environment variables is more representative of how you would access sensitive information in production.
+- **Uses environment variables**: Rather than hard-coding the blob storage connection string, this sample accesses the connection string from an environment variable. The use of environment variables is more representative of how you would access sensitive information in production.
 
 - **Based on a single file**: The original sample uses a technique to create unique file names which allows you to easily upload multiple files. The approach in this sample attempts to simplify the process and only allows you to manipulate one file by default.
 

@@ -1,12 +1,12 @@
 
 
-# Storage Blobs Quickstart (rewrite)
+# Storage Blobs Quickstart (async)
 
-The following sample is a rewrite of the Azure [Storage Blobs Quickstart](https://github.com/Azure-Samples/storage-blobs-node-quickstart) by updating the sample in the following ways:
-
-- **Command-based interaction**: Rather than all operations executing sequentially, you are able to explicitly tell the script which operation to execute (ex: upload, list, etc.)
+The following sample is a rewrite of the [Azure Storage Blobs Quickstart](https://github.com/Azure-Samples/storage-blobs-node-quickstart) by updating the sample in the following ways:
 
 - **Uses async/await**: The [Azure Storage SDK API](https://github.com/Azure/azure-storage-node) is still callback-based, but the approach in this sample modernizes the syntax. API calls are wrapped in `Promises` and executed in the context of an `async/await` operation.
+
+- **Command-based interaction**: Rather than all operations executing sequentially, you are able to explicitly tell the script which operation to execute (ex: upload, list, etc.)
  
 - **Uses environment variables**: Rather than hard-coding the blob storage connection string, this sample accesses the connection string from an environment variable. The use of environment variables is more representative of how you would access sensitive information in production.
 
@@ -17,11 +17,11 @@ To run this sample you need an [Azure account](https://azure.microsoft.com/free/
 ## Set up
 First, clone the repository on your machine:
 
-    git clone https://github.com/craigshoemaker/blob-storage-quickstart-rewrite.git
+    git clone https://github.com/craigshoemaker/blob-storage-quickstart-async.git
 
 Then, switch to the appropriate folder:
 
-    cd blob-storage-quickstart-rewrite
+    cd blob-storage-quickstart-async
 
 Next, install the dependencies:
 
@@ -35,9 +35,9 @@ Now, update add your blob storage connection string to a file named `.env`.
 
 Once the setup steps are complete, you can interact with the sample by passing a command into the `--command` parameter.
 
-For instance if you want to upload the text file to Azure run the following command:
+For instance if you want to create a container in to blob storage, then run the following command:
 
-    node index.js --command upload
+    node index.js --command createContainer
 
 Commands available include:
 
@@ -52,4 +52,4 @@ Commands available include:
 
 ## Resources
 
-You can use the [Azure Storage explorer](https://azure.microsoft.com/features/storage-explorer/) to see the data in Azure.
+You can use the [Azure Storage explorer](https://azure.microsoft.com/features/storage-explorer/) to see the data in your Azure account.

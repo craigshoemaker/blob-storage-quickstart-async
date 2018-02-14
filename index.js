@@ -79,6 +79,18 @@ const _module = {
     "list": list
 };
 
+const commandExists = () => {
+    const cmd = args.command;
+    const exists = !!_module[cmd];
+
+    if(!exists) {
+        console.log(`The '${cmd}' command does not exist. Try one of these:`);
+        Object.keys(_module).forEach(key => console.log(`- ${key}`));
+    }
+
+    return exists;
+};
+
 async function executeCommand() {
     const response = await _module[args.command]();
 
@@ -93,7 +105,10 @@ async function executeCommand() {
 
 try {
     console.log(`Executing '${args.command}'...`);
-    executeCommand();
+
+    if(commandExists()){
+        executeCommand();
+    }
 } catch(e) {
     console.log(e);
 }

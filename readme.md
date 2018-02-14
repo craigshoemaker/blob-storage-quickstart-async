@@ -35,7 +35,7 @@ Now, update add your blob storage connection string to a file named `.env`.
 
 Once the setup steps are complete, you can interact with the sample by passing a command into the `--command` parameter.
 
-For instance if you want to create a container in to blob storage, then run the following command:
+For instance if you want to create a container in blob storage, then run the following command:
 
     node index.js --command createContainer
 

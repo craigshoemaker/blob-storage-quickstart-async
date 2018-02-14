@@ -27,7 +27,7 @@ Next, install the dependencies:
 
     npm install
 
-Now, update add your blob storage connection string to a file named `.env`.
+Now, add your blob storage connection string as an environment variable named `AZURE_STORAGE_CONNECTION_STRING` to a file named `.env`.
 
 > **Note**: The repository includes a file named `.env.example`. You can rename this file by removing `.example` and adding the correct value for your connection string in the `.env` file.
 

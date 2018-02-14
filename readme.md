@@ -8,9 +8,9 @@ The following sample is a rewrite of the [Azure Storage Blobs Quickstart](https:
 
 - **Command-based interaction**: Rather than all operations executing sequentially, you are able to explicitly tell the script which operation to execute (ex: upload, list, etc.)
  
-- **Uses environment variables**: Rather than hard-coding the blob storage connection string, this sample accesses the connection string from an environment variable. The use of environment variables is more representative of how you would access sensitive information in production.
+- **Uses environment variables**: Instead of hard-coding the blob storage connection string in the `.js` file, this sample accesses the connection string from an environment variable. The use of environment variables is more representative of how you would access sensitive information in production.
 
-- **Based on a single file**: The original sample uses a technique to create unique file names which allows you to easily upload multiple files. The approach in this sample attempts to simplify the process and only allows you to manipulate one file by default.
+- **Based on a single file**: The original sample uses a technique to create unique file names which allows you to easily upload multiple files. The approach in this sample attempts to simplify the process and only allows you to manipulate one file named `example.txt`.
 
 To run this sample you need an [Azure account](https://azure.microsoft.com/free/), a [blob storage account](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account) and the associated blob storage connection string.
 

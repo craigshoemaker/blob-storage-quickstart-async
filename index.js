@@ -91,13 +91,13 @@ const commandExists = () => {
     return exists;
 };
 
- const executeCommand = async () => {
+const executeCommand = async () => {
     const response = await _module[args.command]();
 
     console.log(response.message);
 
     if(response.data) {
-        response.data.entries.forEach((entry) => {
+        response.data.entries.forEach(entry => {
             console.log('Name:', entry.name, ' Type:', entry.blobType)
         });
     }

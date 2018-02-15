@@ -91,7 +91,7 @@ const commandExists = () => {
     return exists;
 };
 
-async function executeCommand() {
+ const executeCommand = async () => {
     const response = await _module[args.command]();
 
     console.log(response.message);
